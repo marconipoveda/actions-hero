@@ -1,1 +1,1 @@
-# actions-hero
+# Excercises about Github Actions.
