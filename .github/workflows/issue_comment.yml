@@ -5,6 +5,9 @@ on:
     types:
       - opened
 
+permissions:
+  issues: write
+
 jobs: 
   comment-whit-action:
     runs-on: ubuntu-latest
@@ -13,7 +16,7 @@ jobs:
         run: echo '${{ toJSON(github.event) }}' | jq
         shell: bash
       - name: Create or Update Comment
-        uses: peter-evans/create-or-update-comment@v2.0.0
+        uses: peter-evans/create-or-update-comment@v3.0.2
         with:
           issue-number: 1
           body: |
