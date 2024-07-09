@@ -10,7 +10,7 @@ permissions:
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  ORGANIZATION: ${{ github.event.organization.login }}
+  ORGANIZATION: ${{ github.event.organization }}
   REPOSITORY: ${{ github.event.repository.name }}
   ISSUE_NUMBER: ${{ github.event.issue.number }}
 
