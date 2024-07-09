@@ -1,9 +1,9 @@
 name: Create a comment on new issues
 
 on:
+  workflow_dispatch:
   issues:
-    types:
-      - opened
+    types: [opened]
 
 permissions:
   issues: write
