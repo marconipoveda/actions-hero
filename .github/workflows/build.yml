@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-    - AZURE_REGISTRY: lappreg.azurecr.io
+  AZURE_REGISTRY: lappreg.azurecr.io
 
 jobs:
   docker:
